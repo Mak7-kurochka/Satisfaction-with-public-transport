@@ -7,10 +7,11 @@ from collections import Counter
 plt.style.use('fivethirtyeight')
 
 #Reading a table which i want to annalise
-df = pd.read_csv('Zadowolenie z komunikacji miejskiej mieszkańców Krakowa (Responses).csv')
+_ = pd.read_csv('Zadowolenie z komunikacji miejskiej mieszkańców Krakowa (Responses).csv')
 
 #Dropping two columns beacuse i don't need them
-df.drop(columns=['Timestamp', 'Email Address'], inplace=True)
+_.drop(columns=['Timestamp', 'Email Address'], inplace=True)
+df = _[:259]
 
 #Creating a functionsthat will help me write less lines 
 def create_pie(name_file):
