@@ -6,7 +6,7 @@ from collections import Counter
 #Selecting a style for plots
 plt.style.use('fivethirtyeight')
 
-#Reading a table which i want to annalise
+#Reading a table which i want to analyze
 _ = pd.read_csv('Zadowolenie z komunikacji miejskiej mieszkańców Krakowa (Responses).csv')
 
 #Dropping two columns beacuse i don't need them
